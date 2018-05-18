@@ -1,17 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
-//import this
-
+import Main from './containers/Main'
 
 
-const App = () => {
-  return (
-    // here add component
-  )
+export default class App extends React.Component {
+
+  render() {
+    return(
+      <Main />
+    )
+  }
+
 }
-
 
 
 
