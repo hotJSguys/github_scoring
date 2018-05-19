@@ -27,8 +27,6 @@ const Input = (props) => {
       />
     </Wrapper>
   )
-
 }
-
 
 export default Input
