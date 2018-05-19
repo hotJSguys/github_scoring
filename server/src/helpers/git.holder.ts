@@ -16,3 +16,5 @@ export const addLink = (link: string) => {
     idToLinkMap.set(counter, link)
     return counter
 }
+
+export const getLinkFromId = (id: number) => idToLinkMap.get(id)

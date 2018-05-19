@@ -1,7 +1,7 @@
-import {getAllCommits, getMainLanguage, getName, getReadme} from '../../src/statistic/statistic'
+// todo rewrite
+/*
 import {Repository} from 'nodegit'
 import * as fs from 'fs'
-
 test('getName', async () => {
     const repository = await Repository.open('../../../')
     expect(await getName(repository)).toEqual('github_scoring')
@@ -23,3 +23,4 @@ test('getMainLanguage', async () => {
     const {maxLinesLanguage} = await getMainLanguage(repository)
     expect((maxLinesLanguage!.name === 'JavaScript' || maxLinesLanguage!.name === 'TypeScript')).toEqual(true)
 })
+*/
