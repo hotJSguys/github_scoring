@@ -5,7 +5,7 @@ import {tmpDirectory} from '../helpers/git.link'
 import {getAllCommits, getMainLanguage, getName, getReadme} from '../statistic/statistic'
 
 export const statisticRouter = new Router()
-    .get('/:id/statistic', async ctx => {
+    .get('/statistic/:id', async ctx => {
         const {id} = ctx.params
         const repository = await nodegit.Repository.open(path.join(tmpDirectory, id))
 
