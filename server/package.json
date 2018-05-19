@@ -6,6 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "node"
+    ]
+  },
   "dependencies": {
     "koa": "~2.5.1",
     "koa-bodyparser": "~4.2.0",
@@ -23,11 +36,11 @@
     "@types/koa-bodyparser": "^4.2.0",
     "@types/koa-logger": "^3.1.0",
     "@types/koa-static": "^4.0.0",
-    "@types/node": "^10.0.8",
+    "@types/node": "^10.1.2",
     "@types/nodegit": "^0.18.7",
     "@types/koa-router": "^7.0.28",
-    "jest": "~22.4.3",
-    "supertest": "~3.0.0",
+    "@types/jest": "^22.2.3",
+    "jest": "~22.4.4",
     "ts-jest": "~22.4.6"
   },
   "author": "morsic",

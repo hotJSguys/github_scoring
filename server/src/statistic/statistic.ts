@@ -4,6 +4,12 @@ import {promisify} from 'util'
 import * as path from 'path'
 import langList = require('language-map')
 
+interface UserGitData {
+    commits: Array<{ description: string, date: Date, sha: string }>
+    additions: number
+    deletions: number
+}
+
 interface Language {
     color: string,
     name: string
@@ -33,12 +39,6 @@ export const getName = async (repository: Repository) => {
     const name = parts[parts.length - 1]
 
     return name.endsWith('.git') ? name.slice(0, name.length - 4) : name
-}
-
-interface UserGitData {
-    commits: Array<{ description: string, date: Date, sha: string }>
-    additions: number
-    deletions: number
 }
 
 export const getAllCommits = async (repository: Repository) => {
