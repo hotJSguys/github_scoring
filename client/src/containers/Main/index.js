@@ -4,12 +4,18 @@ import styled from 'react-emotion'
 import Input from '../../components/Input'
 import Loader from '../../components/Loader'
 import Button from '../../components/Button'
-import ContributorIcon from '../../components/ContributorIcon'
+import Graph from '../../components/Graph'
+// import ProjectInform from '../../components/ProjectInform'
 
 const Wrapper = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`
+const GeneralInformation = styled('div')`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 `
 
 export default class Main extends React.Component {
@@ -22,11 +28,12 @@ export default class Main extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
   handleChange(e) {
-    this.setState({loader: true})
+      this.setState({loader: true})
   }
 
   render() {
     return(
+      
       <Wrapper>
         <Input
           onChange={this.handleChange}
@@ -34,9 +41,11 @@ export default class Main extends React.Component {
 
         { this.state.loader == true ? <Loader /> : null}
 
-          <Button text="Кнопка 1" />
-          <Button text="Кнопка 2" />
-          <ContributorIcon src="https://avatars3.githubusercontent.com/u/10588170?s=460&v=4"/>
+        <GeneralInformation>
+          {/* <ProjectInform /> */}
+          <div>123</div>
+          <Graph />
+        </GeneralInformation>
       </Wrapper>
     )
   }

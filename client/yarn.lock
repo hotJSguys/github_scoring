@@ -57,6 +57,54 @@
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.2.tgz#1b928a0baa408fc8ae3ac012cc81375addc147c6"
 
+"@vx/curve@0.0.161", "@vx/curve@^0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/curve/-/curve-0.0.161.tgz#b02c4311cad712adaa16500abc05e48d82e3fee3"
+  dependencies:
+    d3-shape "^1.0.6"
+
+"@vx/glyph@^0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/glyph/-/glyph-0.0.161.tgz#2d532156f2714c9a58e0c8a8a2b2b253b3ba4d77"
+  dependencies:
+    "@vx/group" "0.0.161"
+    classnames "^2.2.5"
+    d3-shape "^1.2.0"
+
+"@vx/group@0.0.161", "@vx/group@^0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/group/-/group-0.0.161.tgz#497a19c2a458dd5ff6fd59e3cd79933dbf184156"
+  dependencies:
+    classnames "^2.2.5"
+
+"@vx/mock-data@^0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/mock-data/-/mock-data-0.0.161.tgz#83abeee287cdcffbfee77b00525f327e788380d1"
+  dependencies:
+    d3-random "^1.0.3"
+
+"@vx/point@0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/point/-/point-0.0.161.tgz#fb8f37a4be0f95581daf3f963adf2f99b64a4a2d"
+
+"@vx/scale@^0.0.161":
+  version "0.0.161"
+  resolved "https://registry.yarnpkg.com/@vx/scale/-/scale-0.0.161.tgz#5243ab8853cf95dd74044f67dd5452b3478d9af7"
+  dependencies:
+    d3-scale "^2.0.0"
+
+"@vx/shape@^0.0.162":
+  version "0.0.162"
+  resolved "https://registry.yarnpkg.com/@vx/shape/-/shape-0.0.162.tgz#adf7728eb3dba559005bb7f29c3d1ffa9a4d56a2"
+  dependencies:
+    "@vx/curve" "0.0.161"
+    "@vx/group" "0.0.161"
+    "@vx/point" "0.0.161"
+    classnames "^2.2.5"
+    d3-path "^1.0.5"
+    d3-shape "^1.2.0"
+    prop-types "^15.5.10"
+
 abab@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -1156,6 +1204,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -1528,6 +1580,63 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
     cssom "0.3.x"
+
+d3-array@^1.2.0, d3-array@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-1.2.1.tgz#d1ca33de2f6ac31efadb8e050a021d7e2396d5dc"
+
+d3-collection@1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.4.tgz#342dfd12837c90974f33f1cc0a785aea570dcdc2"
+
+d3-color@1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.2.0.tgz#d1ea19db5859c86854586276ec892cf93148459a"
+
+d3-format@1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-1.3.0.tgz#a3ac44269a2011cdb87c7b5693040c18cddfff11"
+
+d3-interpolate@1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.2.0.tgz#40d81bd8e959ff021c5ea7545bc79b8d22331c41"
+  dependencies:
+    d3-color "1"
+
+d3-path@1, d3-path@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/d3-path/-/d3-path-1.0.5.tgz#241eb1849bd9e9e8021c0d0a799f8a0e8e441764"
+
+d3-random@^1.0.3:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/d3-random/-/d3-random-1.1.0.tgz#6642e506c6fa3a648595d2b2469788a8d12529d3"
+
+d3-scale@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/d3-scale/-/d3-scale-2.0.0.tgz#fd8ac78381bc2ed741d8c71770437a5e0549a5a5"
+  dependencies:
+    d3-array "^1.2.0"
+    d3-collection "1"
+    d3-format "1"
+    d3-interpolate "1"
+    d3-time "1"
+    d3-time-format "2"
+
+d3-shape@^1.0.6, d3-shape@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-1.2.0.tgz#45d01538f064bafd05ea3d6d2cb748fd8c41f777"
+  dependencies:
+    d3-path "1"
+
+d3-time-format@2:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/d3-time-format/-/d3-time-format-2.1.1.tgz#85b7cdfbc9ffca187f14d3c456ffda268081bb31"
+  dependencies:
+    d3-time "1"
+
+d3-time@1:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-1.0.8.tgz#dbd2d6007bf416fe67a76d17947b784bffea1e84"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -4358,7 +4467,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.6.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -4493,12 +4602,6 @@ react-emotion@^9.1.3:
   dependencies:
     babel-plugin-emotion "^9.1.2"
     create-emotion-styled "^9.1.2"
-
-react-input-autosize@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-2.2.1.tgz#ec428fa15b1592994fb5f9aa15bb1eb6baf420f8"
-  dependencies:
-    prop-types "^15.5.8"
 
 react@^16.3.2:
   version "16.3.2"
