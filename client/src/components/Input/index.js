@@ -17,7 +17,6 @@ const _Input = styled('input')`
 `
 
 const Input = (props) => {
-  console.log('=> ', props)
   return (
     <Wrapper>
       <_Input
