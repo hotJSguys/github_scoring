@@ -4,12 +4,18 @@ import styled from 'react-emotion'
 import Input from '../../components/Input'
 import Loader from '../../components/Loader'
 import Button from '../../components/Button'
-import ContributorIcon from '../../components/ContributorIcon'
+import ContributorGroup from '../../components/ContributorGroup'
 
 const Wrapper = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`
+
+const AllComponentsListTest = styled('div')`
+    border: dashed 2px #000;
+    padding: 10px;
+    background-color: #eee;
 `
 
 export default class Main extends React.Component {
@@ -33,10 +39,16 @@ export default class Main extends React.Component {
         />
 
         { this.state.loader == true ? <Loader /> : null}
-
-          <Button text="Кнопка 1" />
-          <Button text="Кнопка 2" />
-          <ContributorIcon src="https://avatars3.githubusercontent.com/u/10588170?s=460&v=4"/>
+        <AllComponentsListTest>
+            <div>
+                <Button text="Кнопка 1" />
+                <Button text="Кнопка 2" />
+                <Button text="Кнопка 3" />
+            </div>
+           <div>
+               <ContributorGroup flexDirection="row"/>
+           </div>
+        </AllComponentsListTest>
       </Wrapper>
     )
   }
