@@ -16,7 +16,7 @@ const _Button = styled('div')`
 	font-weight: bold;
 	font-family: Arial;
 	text-align: center;
-	transition: .2s;
+	transition: .15s;
 	margin: 3px;
 	&:hover {
 	   background: linear-gradient(40deg, rgb(230, 126, 214), rgb(90, 221, 249));
