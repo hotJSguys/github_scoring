@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Main from './containers/Main'
-
+//import this
 
 export default class App extends React.Component {
 
@@ -11,7 +11,6 @@ export default class App extends React.Component {
       <Main />
     )
   }
-
 }
 
 
