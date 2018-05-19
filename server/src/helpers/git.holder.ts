@@ -6,11 +6,9 @@ let counter = 0
 
 export const getLinkId = (link: string) => linkToIdMap.get(link)
 
-export const getLinkUrl = (id: number) => idToLinkMap.get(id)
-
 export const addLink = (link: string) => {
     if (linkToIdMap.has(link)) {
-        throw new Error('already exists')
+        return linkToIdMap.get(link)!
     }
 
     counter++

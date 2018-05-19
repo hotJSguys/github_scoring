@@ -1,7 +1,7 @@
 import * as Router from 'koa-router'
 import * as nodegit from 'nodegit'
 import {parseUrl, tmpDirectory} from '../helpers/git.link'
-import {addLink, getLinkId} from './git.holder'
+import {addLink, getLinkId} from '../helpers/git.holder'
 import * as path from 'path'
 
 
