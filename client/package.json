@@ -10,6 +10,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@vx/curve": "^0.0.161",
+    "@vx/glyph": "^0.0.161",
+    "@vx/group": "^0.0.161",
+    "@vx/mock-data": "^0.0.161",
+    "@vx/scale": "^0.0.161",
+    "@vx/shape": "^0.0.162",
+    "d3-array": "^1.2.1",
     "emotion": "^9.1.3",
     "enzyme": "^3.3.0",
     "jest": "^22.4.4",
