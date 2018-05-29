@@ -3,7 +3,7 @@ import styled from 'react-emotion'
 
 import  loader   from '../../assets/img/loader.svg'
 
-const Wrapper = styled('div')`
+const Loader = styled('div')`
   display: flex;
   justify-content: center;
 `
@@ -12,12 +12,10 @@ const Image = styled('img')`
   width: 6em;
 `
 
-const Loader = () => {
+export default () => {
   return (
-    <Wrapper>
+    <Loader>
       <Image src={loader} />
-    </Wrapper>
+    </Loader>
   )
 }
-
-export default Loader

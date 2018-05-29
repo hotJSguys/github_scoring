@@ -38,14 +38,7 @@ export default class Main extends React.Component {
         <Input
           onChange={this.handleChange}
         />
-
         { this.state.loader == true ? <Loader /> : null}
-
-        <GeneralInformation>
-          {/* <ProjectInform /> */}
-          <div>123</div>
-          <Graph />
-        </GeneralInformation>
       </Wrapper>
     )
   }

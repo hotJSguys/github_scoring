@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 
-const Avatar = styled('div')`
+const Contributor = styled('div')`
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -21,12 +21,10 @@ const Avatar = styled('div')`
     }
 `
 
-const ContributorIcon = (props) => {
+export default (props) => {
     return (
-        <Avatar>
+        <Contributor>
             <img src={props.src} width="100%" height="100%"/>
-        </Avatar>
+        </Contributor>
     )
 }
-
-export default ContributorIcon

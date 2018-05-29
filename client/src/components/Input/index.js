@@ -8,7 +8,7 @@ const Wrapper = styled('div')`
   justify-content: center;
 `
 
-const _Input = styled('input')`
+const Input = styled('input')`
   border: 1px solid #ccc;
   min-width: 200px;
   border-radius: 4px;
@@ -16,10 +16,10 @@ const _Input = styled('input')`
   outline: none;
 `
 
-const Input = (props) => {
+export default (props) => {
   return (
     <Wrapper>
-      <_Input
+      <Input
         placeholder = 'Enter repo link'
         type='url'
         onChange={(e) => {props.onChange(e.target.value)}}
@@ -27,5 +27,3 @@ const Input = (props) => {
     </Wrapper>
   )
 }
-
-export default Input
