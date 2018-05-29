@@ -4,16 +4,18 @@ import styled from 'react-emotion'
 const Contributor = styled('div')`
     width: 50px;
     height: 50px;
+    margin: 5px;
     cursor: pointer;
     transition: .15s;
     img {
       border-radius: 100px;
-      border: solid 3px rgb(210,128,34);
+      border: solid 3px rgba(255,55,255,0.1);
       transition: .15s;
+      box-sizing: border-box;
     }
     &:hover {
     img {
-      border: solid 3px rgb(238,124,65);
+      border: solid 3px rgba(255,55,255,1);
     }
 	&:active {
     	transform: scale(0.92)

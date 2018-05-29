@@ -4,6 +4,7 @@ import styled from 'react-emotion'
 import Input from '../../components/Input'
 import Loader from '../../components/Loader'
 import Button from '../../components/Button'
+
 import Graph from '../../components/Graph'
 // import ProjectInform from '../../components/ProjectInform'
 
@@ -16,6 +17,12 @@ const GeneralInformation = styled('div')`
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+`
+
+const AllComponentsListTest = styled('div')`
+    border: dashed 2px #000;
+    padding: 10px;
+    background-color: #eee;
 `
 
 export default class Main extends React.Component {
