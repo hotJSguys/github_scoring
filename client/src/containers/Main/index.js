@@ -1,53 +1,49 @@
-import React from 'react'
-import styled from 'react-emotion'
+import React from 'react';
+import styled from 'react-emotion';
 
-import Input from '../../components/Input'
-import Loader from '../../components/Loader'
-import Button from '../../components/Button'
+import Input from '../../components/Input';
+import Loader from '../../components/Loader';
+import Button from '../../components/Button';
 
-import Graph from '../../components/Graph'
+import Graph from '../../components/Graph';
 // import ProjectInform from '../../components/ProjectInform'
 
 const Wrapper = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 const GeneralInformation = styled('div')`
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-`
+`;
 
 const AllComponentsListTest = styled('div')`
-    border: dashed 2px #000;
-    padding: 10px;
-    background-color: #eee;
-`
+  border: dashed 2px #000;
+  padding: 10px;
+  background-color: #eee;
+`;
 
 export default class Main extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       load: false
-    }
+    };
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
   }
   handleChange(e) {
-      this.setState({loader: true})
+    this.setState({ loader: true });
   }
 
   render() {
-    return(
-      
+    return (
       <Wrapper>
-        <Input
-          onChange={this.handleChange}
-        />
-        { this.state.loader == true ? <Loader /> : null}
+        <Input onChange={this.handleChange} />
+        {this.state.loader == true ? <Loader /> : null}
       </Wrapper>
-    )
+    );
   }
-
 }

@@ -1,22 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
 
-import Main from './containers/Main'
-import Auth from './containers/Auth'
-//import this
+import App from './App.js';
 
-export default class App extends React.Component {
-
-  render() {
-    return(
-      <Main />
-    )
-  }
-}
-
-
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <Provider>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
 
 if (module.hot) {
   module.hot.accept();
