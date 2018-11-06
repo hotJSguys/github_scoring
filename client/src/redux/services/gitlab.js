@@ -1,1 +1,1 @@
-const GITLAB_ENDPOINT = "";
+const GITLAB_ENDPOINT = '';

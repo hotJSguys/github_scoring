@@ -1,4 +1,4 @@
-import githubServices from '../services/github'
-import gitlabServices from '../services/gitlab'
+import githubServices from '../services/github';
+import gitlabServices from '../services/gitlab';
 
-// action's functions 
+// action's functions
