@@ -21,6 +21,5 @@ const Button = styled('div')`
   }
 `;
 
-export default (props) => {
-  return <Button>{props.text}</Button>;
-};
+const Button = (props) => <Button>{props.text}</Button>;
+export default Button;
