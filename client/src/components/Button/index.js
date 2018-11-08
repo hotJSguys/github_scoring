@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-const Button = styled('div')`
+const _button = styled('div')`
   display: inline-block;
   color: #fff;
   cursor: pointer;
@@ -21,5 +21,5 @@ const Button = styled('div')`
   }
 `;
 
-const Button = (props) => <Button>{props.text}</Button>;
+const Button = (props) => <_button>{props.text}</_button>;
 export default Button;

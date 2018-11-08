@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import loader from '../../assets/img/loader.svg';
+import loader from '../../assets/images/loader.svg';
 
 const Loader = styled('div')`
   display: flex;
