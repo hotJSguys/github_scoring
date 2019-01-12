@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-const _button = styled('div')`
+const _button = styled('button')`
   display: inline-block;
   color: #fff;
   cursor: pointer;
@@ -21,5 +21,16 @@ const _button = styled('div')`
   }
 `;
 
-const Button = (props) => <_button>{props.text}</_button>;
+const Button = (props) => {
+  return (
+    <_button 
+      text={props.text} 
+      type={props.type}
+      
+      onClick={props.onClick}
+    >
+      {props.text}
+    </_button>
+  )
+}
 export default Button;
