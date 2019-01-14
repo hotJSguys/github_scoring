@@ -23,14 +23,9 @@ const _button = styled('button')`
 
 const Button = (props) => {
   return (
-    <_button 
-      text={props.text} 
-      type={props.type}
-      
-      onClick={props.onClick}
-    >
+    <_button text={props.text} type={props.type} onClick={props.onClick}>
       {props.text}
     </_button>
-  )
-}
+  );
+};
 export default Button;

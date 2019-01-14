@@ -1,4 +1,10 @@
 import githubServices from '../services/github';
-import gitlabServices from '../services/gitlab';
 
-// action's functions
+export function ACTION_NAME() {
+  return async (dispatch, getState) => {
+    try {
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+}

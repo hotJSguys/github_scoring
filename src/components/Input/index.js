@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styled from 'react-emotion';
 
 const InputBox = styled('input')`
@@ -29,7 +28,7 @@ const Input = (props) => {
         props.onChange(e.target.value);
       }}
     />
-  )
-}
+  );
+};
 
-export default Input
+export default Input;

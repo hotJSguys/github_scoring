@@ -1,22 +1,34 @@
-import React from 'react'
-import CardCommit from '../index'
+import React from 'react';
+import CardCommit from '../index';
 
 describe('CardCommit ', () => {
+  const description = 'update deps';
+  const url_avatar = 'https://cdn.dribbble.com/users/3460/screenshots/5578703/m-avatar-ryan.png';
+  const name = 'Abramov';
+  const date = '3 days ago';
 
-  const data = ['description', 'link', 'url_avatar', 'name', 'date', 'commit_number']
-  const card = shallow(<CardCommit data={data} onClick={mockCallBack}/>)
+  const card = shallow(
+    <CardCommit
+      description={description}
+      url_avatar={url_avatar}
+      name={name}
+      date={date}
+      onClick={mockCallBack}
+    />
+  );
+
   const mockCallBack = jest.fn();
-
-  it('Snapshot',  () => {
-    expect(card).toMatchSnapshot()
-  })
+  it('Snapshot', () => {
+    expect(card).toMatchSnapshot();
+  });
 
   it('check prop data', () => {
-    expect(card.props().data).toBe(data)
-    card.find('button').simulate('click')
-  })
+    console.log('PROPS', card.props().data);
+    expect(card.props().data).toBe(data);
+  });
 
   it('Clickable button', () => {
-    expect(mockCallBack.mock.calls.length).toEqual(1)
-  })
-})
+    card.find('.browse').simulate('click');
+    expect(mockCallBack.mock.calls.length).toEqual(1);
+  });
+});

@@ -1,7 +1,8 @@
-import React from 'react'
-import styled from 'react-emotion'
+import React from 'react';
+import styled from 'react-emotion';
 
-const Wrapper = styled('div')``
+const Wrapper = styled('div')``;
+const General = styled('div')``;
 
 const CardCommit = (props) => {
   return (
@@ -9,16 +10,16 @@ const CardCommit = (props) => {
       <General>
         <a href={props.link}>{props.description}</a>
         <div>
-          <img src={props.url_avatar}/>
-          <a>{props.name}</a>
-          <span>{props.date}</span>
+          <img src={props.url_avatar} width="60" />
+          <a href="asd">{props.name}</a>
+          <span>commited {props.date}</span>
         </div>
       </General>
-      <a>
+      <a className="browse">
         <img />
       </a>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default CardCommit
+export default CardCommit;

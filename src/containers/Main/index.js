@@ -4,6 +4,7 @@ import styled from 'react-emotion';
 import Input from '../../components/Input';
 import Loader from '../../components/Loader';
 import Button from '../../components/Button';
+import Card from '../../components/CardCommit';
 
 import Graph from '../../components/Graph';
 // import ProjectInform from '../../components/ProjectInform'
@@ -41,6 +42,13 @@ export default class Main extends React.Component {
   render() {
     return (
       <Wrapper>
+        <Card
+          link="1234"
+          description="description"
+          url_avatar="https://cdn.dribbble.com/users/3460/screenshots/5578703/m-avatar-ryan.png"
+          name="dick name"
+          date="14.12.88"
+        />
         <Input onChange={this.handleChange} />
         {this.state.loader == true ? <Loader /> : null}
       </Wrapper>
